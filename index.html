@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculadora de IMC</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main id="container">
+    <section id="img">
+      <img src="imagens\fitness.jpg" alt="health image">
+    </section>
+
+    <section id="calculator">
+      <form id="form">
+        <h1 id="title">
+          Calculadora - IMC
+        </h1>
+
+        <div class="input-box">
+          <label for="weight">Peso em Kg</label>
+
+          <div class="input-field">
+            <i class="fa-solid fa-dumbbell"></i>
+            <input type="text" id="weight" required>
+            <span>Kg</span>
+          </div>
+
+          <div>
+            <label for="height">Altura em metros</label>
+
+            <div class="input-field">
+              <i class="fa-sharp fa-solid fa-ruler-vertical"></i>
+              <i class="fa-solid fa-weight-hanging"></i>
+              <input type="text" id="height" required>
+              <span>m</span>
+            </div>
+          </div>
+
+          <button id="calculate">Calcular</button>
+      </form>
+
+      <div id="infos">
+        <div id="result">
+          <div id="bmi">
+            <span id="bmi-value"></span>
+          </div>
+          <div id="description">
+          </div>
+        </div>
+      </div>
+      <div id="more_info" class="hidden">
+        <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">Mais informações sobre o IMC</a>
+        <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
